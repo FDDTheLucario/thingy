@@ -1,0 +1,12 @@
+name: thingy
+services:
+  5e-srd-api:
+    image: ghcr.io/5e-bits/5e-srd-api:3.7.2
+    ports: 
+      - 3000:3000 
+  5e-database:
+    image: ghcr.io/5e-bits/5e-database:latest
+    depends_on: 
+      - 5e-srd-api
+    ports:
+      - 27017:27017
