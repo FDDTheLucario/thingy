@@ -1,8 +1,12 @@
 import SRDSkill from "./skill";
-
+import SRDItem from "./item";
+import { Expose, Type } from 'class-transformer';
 export default class SRDAbilityScore extends SRDItem {
+    @Expose({name: 'desc'})
     description: string[];
+    @Expose({name: 'full_name'})
     fullName: string;
+    @Type(() => SRDSkill)
     skills: SRDSkill[];
 
     constructor(index: string, name: string, url: string, fullName: string, description: string[], skills: SRDSkill[]) {
@@ -14,7 +18,7 @@ export default class SRDAbilityScore extends SRDItem {
 }
 
 /* 
- * {
+ * { 
   "index": "int",
   "name": "INT",
   "full_name": "Intelligence",

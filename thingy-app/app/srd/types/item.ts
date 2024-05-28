@@ -1,4 +1,4 @@
-class SRDItem {
+export default class SRDItem {
     name: string;
     index: string;
     url: string;

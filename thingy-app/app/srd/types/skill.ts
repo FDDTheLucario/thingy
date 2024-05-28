@@ -1,3 +1,4 @@
+import SRDItem from "./item";
 export default class SRDSkill extends SRDItem {
     abilityScore: SRDItem[];
 

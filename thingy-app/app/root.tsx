@@ -5,6 +5,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import 'reflect-metadata';
 
 export default function App() {
   return (

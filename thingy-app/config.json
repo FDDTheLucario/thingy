@@ -1,0 +1,12 @@
+{
+    "custom": {
+        "enabled": true,
+        "url": "",
+        "port": ""
+    },
+    "default": {
+        "enabled": true,
+        "url": "",
+        "port": ""
+    }
+}
